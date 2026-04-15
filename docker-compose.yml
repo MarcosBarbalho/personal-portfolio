@@ -1,0 +1,26 @@
+services:
+  npm:
+    image: node:25-alpine
+    working_dir: /usr/local/src
+    entrypoint: npm
+    command: install
+    volumes:
+      - ./:/usr/local/src
+
+  app:
+    image: node:25-alpine
+    working_dir: /usr/local/src
+    command: npm run dev -- --host
+    environment:
+      - NODE_ENV=development
+    networks:
+      - web
+    volumes:
+      - ./:/usr/local/src
+    ports:
+      - 5173:5173
+      - 4173:4173
+
+networks:
+  web:
+    external: true
