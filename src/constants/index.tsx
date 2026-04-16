@@ -101,9 +101,9 @@ const education: ExperienceType[] = [
   },
   {
     year: '2026',
-    title: 'PHP Experience Course',
+    title: 'PHP Experience Bootcamp',
     institute: 'DIO / Online Course',
-    desc: 'Learned PHP, Laravel, and API development for modern web applications.',
+    desc: 'Specialized in PHP, Laravel, and API development for modern web applications.',
   },
   {
     year: '2026',
@@ -167,7 +167,7 @@ const tools: ToolsType[] = [
   },
   {
     label: 'Typescript',
-    imgSrc: '/images/tools/react.svg',
+    imgSrc: '/images/tools/typescript.svg',
   },
   {
     label: 'React',
