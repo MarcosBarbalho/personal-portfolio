@@ -32,7 +32,7 @@ export const Profile = () => {
         <div>
           <p className='text-sm text-neutral-300'>Based in:</p>
           <p className='text-lg capitalize'>
-            Based in Belo Horizonte, Minas Gerais, Brazil
+            Belo Horizonte, Minas Gerais, Brazil
           </p>
         </div>
 
