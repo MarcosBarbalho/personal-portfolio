@@ -67,25 +67,25 @@ const socialLinks: LinksType[] = [
 
 const projectsData: ProjectType[] = [
   {
-    imgSrc: '/images/yggdrasil.jpeg',
+    imgSrc: '/images/yggdrasil.jpg',
     title: 'Docker Proxy',
     tags: ['Development', 'Docker'],
     projectLink: 'https://github.com/MarcosBarbalho/yggdrasil',
   },
   {
-    imgSrc: '/images/stock-tracker.jpeg',
+    imgSrc: '/images/stock-tracker.jpg',
     title: 'Stock Tracker',
     tags: ['Development', 'API'],
     projectLink: 'https://github.com/MarcosBarbalho/stock-tracker',
   },
   {
-    imgSrc: '/images/travel-manager.jpeg',
+    imgSrc: '/images/travel-manager.jpg',
     title: 'Travel Manager',
     tags: ['Development', 'API'],
     projectLink: 'https://github.com/MarcosBarbalho/travel-manager',
   },
   {
-    imgSrc: '/images/personal-portfolio.jpeg',
+    imgSrc: '/images/personal-portfolio.jpg',
     title: 'Personal Portfolio',
     tags: ['Development', 'Website'],
     projectLink: 'https://github.com/MarcosBarbalho/personal-portfolio',
@@ -115,16 +115,28 @@ const education: ExperienceType[] = [
 
 const experience: ExperienceType[] = [
   {
-    year: '2021 – 2022',
-    title: 'Frontend Developer Intern',
-    institute: 'PixelForge Studio',
-    desc: 'Built and optimized responsive websites, collaborating closely with designers and backend teams.',
+    year: '2018 – 2020',
+    title: 'Backend Developer Intern',
+    institute: 'Akmos',
+    desc: 'Assisted in building and maintaining backend services and APIs, focusing on clean code, testing, and scalable system design.',
   },
   {
-    year: '2022 – Present',
-    title: 'UI Engineer',
-    institute: 'Freelance / Remote Work',
-    desc: 'Designed and developed web interfaces for SaaS startups using React, Tailwind, and Figma.',
+    year: '2021 – 2022',
+    title: 'Frontend Developer',
+    institute: 'Transpes',
+    desc: 'Built and maintained responsive web applications using modern JavaScript frameworks, focusing on performance, usability, and clean UI implementation.',
+  },
+  {
+    year: '2022 – 2024',
+    title: 'Backend Developer',
+    institute: 'GPM',
+    desc: 'Developed and maintained secure and scalable backend systems for financial applications, focusing on data integrity, transaction processing, and regulatory compliance.',
+  },
+  {
+    year: '2025 – 2026',
+    title: 'Backend Developer',
+    institute: 'Onfly',
+    desc: 'Built and maintained scalable backend systems for international corporate travel platforms, focusing on booking workflows, integrations with global providers, and reliable transaction processing.',
   },
 ];
 
