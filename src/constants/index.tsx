@@ -15,20 +15,20 @@ import type {
  * Assets
  */
 import {
+  Blocks,
+  Bot,
   Briefcase,
   FileText,
-  Globe,
   Home,
   Layers,
   Mail,
   MessageCircle,
-  Palette,
-  Rocket,
+  MonitorCog,
+  MousePointer2,
   Settings,
-  Smartphone,
   User,
 } from 'lucide-react';
-import { FaLinkedin } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const navLinks: LinksType[] = [
   { label: 'Home', link: '#hero', icon: Home },
@@ -58,53 +58,58 @@ const socialLinks: LinksType[] = [
     label: 'Linkedin',
     link: 'https://www.linkedin.com/in/marcos-barbalho-moreira-00/',
   },
+  {
+    icon: FaGithub,
+    label: 'Github',
+    link: 'https://github.com/MarcosBarbalho/',
+  },
 ];
 
 const projectsData: ProjectType[] = [
   {
-    imgSrc: '/images/project-ph-1.jpeg',
-    title: 'Full stack music app',
-    tags: ['API', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    imgSrc: '/images/yggdrasil.jpeg',
+    title: 'Docker Proxy',
+    tags: ['Development', 'Docker'],
+    projectLink: 'https://github.com/MarcosBarbalho/yggdrasil',
   },
   {
-    imgSrc: '/images/project-ph-2.jpeg',
-    title: 'Full stack music app',
-    tags: ['API', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    imgSrc: '/images/stock-tracker.jpeg',
+    title: 'Stock Tracker',
+    tags: ['Development', 'API'],
+    projectLink: 'https://github.com/MarcosBarbalho/stock-tracker',
   },
   {
-    imgSrc: '/images/project-ph-3.jpeg',
-    title: 'Full stack music app',
-    tags: ['API', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    imgSrc: '/images/travel-manager.jpeg',
+    title: 'Travel Manager',
+    tags: ['Development', 'API'],
+    projectLink: 'https://github.com/MarcosBarbalho/travel-manager',
   },
   {
-    imgSrc: '/images/project-ph-4.jpeg',
-    title: 'Full stack music app',
-    tags: ['API', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    imgSrc: '/images/personal-portfolio.jpeg',
+    title: 'Personal Portfolio',
+    tags: ['Development', 'Website'],
+    projectLink: 'https://github.com/MarcosBarbalho/personal-portfolio',
   },
 ];
 
 const education: ExperienceType[] = [
   {
-    year: '2018 – 2020',
-    title: 'Bachelor of Computer Science',
-    institute: 'National University of Technology',
-    desc: 'Focused on front-end development, UI design, and web application architecture.',
+    year: '2025',
+    title: 'Bachelor of Information Systems',
+    institute: 'Pontifical Catholic University of Minas Gerais',
+    desc: 'Focused on development and web application architecture.',
   },
   {
-    year: '2021 – 2022',
-    title: 'Frontend Development Bootcamp',
-    institute: 'Udemy / Online Course',
-    desc: 'Learned modern JavaScript, React, and responsive UI patterns through real-world projects.',
+    year: '2026',
+    title: 'PHP Experience Course',
+    institute: 'DIO / Online Course',
+    desc: 'Learned PHP, Laravel, and API development for modern web applications.',
   },
   {
-    year: '2023',
-    title: 'Advanced UI/UX Design Course',
-    institute: 'Design+Code',
-    desc: 'Explored advanced design systems, motion design, and accessibility best practices.',
+    year: '2026',
+    title: 'TypeScript Fullstack Developer Course',
+    institute: 'DIO / Online Course',
+    desc: 'Worked with TypeScript, React, and Node.js to build robust full-stack applications.',
   },
 ];
 
@@ -125,24 +130,40 @@ const experience: ExperienceType[] = [
 
 const tools: ToolsType[] = [
   {
-    label: 'Figma',
-    imgSrc: '/images/tools/figma.svg',
+    label: 'PHP',
+    imgSrc: '/images/tools/php.svg',
   },
   {
-    label: 'CSS',
-    imgSrc: '/images/tools/css3.svg',
+    label: 'Laravel',
+    imgSrc: '/images/tools/laravel.svg',
   },
   {
-    label: 'Tailwind CSS',
-    imgSrc: '/images/tools/tailwindcss.svg',
+    label: 'Docker',
+    imgSrc: '/images/tools/docker.svg',
+  },
+  {
+    label: 'MySQL',
+    imgSrc: '/images/tools/mysql.svg',
+  },
+  {
+    label: 'Postgres',
+    imgSrc: '/images/tools/postgresql.svg',
+  },
+  {
+    label: 'JavaScript',
+    imgSrc: '/images/tools/javascript.svg',
+  },
+  {
+    label: 'Typescript',
+    imgSrc: '/images/tools/react.svg',
   },
   {
     label: 'React',
     imgSrc: '/images/tools/react.svg',
   },
   {
-    label: 'JavaScript',
-    imgSrc: '/images/tools/javascript.svg',
+    label: 'Vue',
+    imgSrc: '/images/tools/vue.svg',
   },
   {
     label: 'Node.js',
@@ -153,55 +174,55 @@ const tools: ToolsType[] = [
     imgSrc: '/images/tools/expressjs.svg',
   },
   {
-    label: 'Mongodb',
-    imgSrc: '/images/tools/mongodb.svg',
+    label: 'Tailwind CSS',
+    imgSrc: '/images/tools/tailwindcss.svg',
   },
 ];
 
 const services: ServiceType[] = [
   {
-    title: 'Brand Identity',
-    desc: 'I craft modern visual identities that help brands stand out through strong typography, colors, and minimal design.',
-    projects: '32 Projects',
-    icon: <Palette className='h-6 w-6 text-green-400' />,
+    title: 'API Development',
+    desc: 'Building scalable and reliable interfaces that enable seamless communication between different software systems.',
+    projects: '20 Projects',
+    icon: <MonitorCog className='h-6 w-6 text-green-400' />,
   },
   {
-    title: 'UI/UX Design',
-    desc: 'Designing clean, intuitive, and user-friendly interfaces that improve user experience and boost conversions.',
-    projects: '47 Projects',
+    title: 'Dockerization',
+    desc: 'Packaging applications into containers to ensure consistent environments and streamlined deployment across different systems.',
+    projects: '12 Projects',
     icon: <Layers className='h-6 w-6 text-green-400' />,
   },
   {
-    title: 'Web Development',
-    desc: 'Building high-performance, SEO-friendly websites using Next.js, Tailwind, and modern web technologies.',
+    title: 'Automated Tests',
+    desc: 'Writing and running tests to automatically verify that software behaves as expected and prevent regressions.',
     projects: '58 Projects',
-    icon: <Globe className='h-6 w-6 text-green-400' />,
+    icon: <Bot className='h-6 w-6 text-green-400' />,
   },
   {
-    title: 'Mobile App Design',
-    desc: 'Creating pixel-perfect app interfaces optimized for both iOS and Android devices with smooth usability.',
+    title: 'Integrations',
+    desc: 'Connecting different systems and services to enable seamless data exchange and unified workflows.',
     projects: '21 Projects',
-    icon: <Smartphone className='h-6 w-6 text-green-400' />,
+    icon: <Blocks className='h-6 w-6 text-green-400' />,
   },
   {
-    title: 'Product Launch Strategy',
-    desc: 'Helping startups prepare their digital products for launch with design systems, marketing pages, and assets.',
+    title: 'Interface Development',
+    desc: 'Building responsive and interactive interfaces that deliver smooth and engaging user experiences.',
     projects: '15 Projects',
-    icon: <Rocket className='h-6 w-6 text-green-400' />,
+    icon: <MousePointer2 className='h-6 w-6 text-green-400' />,
   },
 ];
 
 const statsData: StatsType[] = [
   {
-    number: '30+',
-    label: 'Happy Clients',
-  },
-  {
-    number: '05+',
+    number: '07+',
     label: 'Years Of Experience',
   },
   {
-    number: '50+',
+    number: '15+',
+    label: 'APIs Built',
+  },
+  {
+    number: '30+',
     label: 'Projects Done',
   },
 ];
