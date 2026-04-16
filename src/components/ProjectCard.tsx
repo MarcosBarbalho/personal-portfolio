@@ -12,12 +12,8 @@ import { fadeUp } from '@/lib/animations';
 // Types
 import type { ProjectType } from '@/types';
 
-// Assets
-import { SparkleIcon } from 'lucide-react';
-
 export const ProjectCard = ({
   imgSrc,
-  projectLink,
   tags,
   title,
 }: ProjectType) => {

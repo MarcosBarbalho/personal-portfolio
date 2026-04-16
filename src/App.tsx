@@ -3,9 +3,6 @@
  * @license Apache-2.0
  */
 
-// Node Modules
-import { useEffect } from 'react';
-
 // Components
 import { Hero } from '@/components/Hero';
 import { Stats } from '@/components/Stats';
