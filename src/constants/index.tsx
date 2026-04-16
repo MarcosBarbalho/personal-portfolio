@@ -183,31 +183,31 @@ const services: ServiceType[] = [
   {
     title: 'API Development',
     desc: 'Building scalable and reliable interfaces that enable seamless communication between different software systems.',
-    projects: '20 Projects',
+    projects: '30+ Projects',
     icon: <MonitorCog className='h-6 w-6 text-green-400' />,
   },
   {
     title: 'Dockerization',
     desc: 'Packaging applications into containers to ensure consistent environments and streamlined deployment across different systems.',
-    projects: '12 Projects',
+    projects: '20+ Projects',
     icon: <Layers className='h-6 w-6 text-green-400' />,
   },
   {
     title: 'Automated Tests',
     desc: 'Writing and running tests to automatically verify that software behaves as expected and prevent regressions.',
-    projects: '58 Projects',
+    projects: '100+ Projects',
     icon: <Bot className='h-6 w-6 text-green-400' />,
   },
   {
     title: 'Integrations',
     desc: 'Connecting different systems and services to enable seamless data exchange and unified workflows.',
-    projects: '21 Projects',
+    projects: '30+ Projects',
     icon: <Blocks className='h-6 w-6 text-green-400' />,
   },
   {
     title: 'Interface Development',
     desc: 'Building responsive and interactive interfaces that deliver smooth and engaging user experiences.',
-    projects: '15 Projects',
+    projects: '20+ Projects',
     icon: <MousePointer2 className='h-6 w-6 text-green-400' />,
   },
 ];
@@ -218,11 +218,11 @@ const statsData: StatsType[] = [
     label: 'Years Of Experience',
   },
   {
-    number: '15+',
+    number: '30+',
     label: 'APIs Built',
   },
   {
-    number: '30+',
+    number: '50+',
     label: 'Projects Done',
   },
 ];
